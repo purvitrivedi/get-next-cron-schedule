@@ -57,9 +57,9 @@ We have a set of tasks, each running at least daily, which are scheduled using s
 Examples of the scheduler config:
 ```
 30 1 /bin/run_me_daily
-45 \* /bin/run_me_hourly
-\* \* /bin/run_me_every_minute
-\* 19 /bin/run_me_sixty_times
+45 * /bin/run_me_hourly
+* * /bin/run_me_every_minute
+* 19 /bin/run_me_sixty_times
 ```
 
 The first field is the minute past the hour, the second field is the hour of the day and the third is the command to run. For both cases * means that it should run for all values of that field. In the above example run_me_daily has been set to run at 1:30am every day and run_me_hourly at 45 minutes past the hour every hour. The fields are whitespace separated and each entry is on a separate line.
