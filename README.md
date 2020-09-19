@@ -15,9 +15,9 @@ For example: ​<code> ./application.py 16:10 < config</code> will output:
 Where the scheduler config consists of:
 ```
 30 1 /bin/run_me_daily
-45 \* /bin/run_me_hourly
-\* \* /bin/run_me_every_minute
-\* 19 /bin/run_me_sixty_times
+45 * /bin/run_me_hourly
+* * /bin/run_me_every_minute
+* 19 /bin/run_me_sixty_times
 ```
 
 
